@@ -38,7 +38,7 @@ public class ControllersTest
 		});
 	}
 
-	@Test
+	@Test //SHOULD FAIL !!!
 	public void testFindByName()
 	{
 		running(fakeApplication(), new Runnable()
