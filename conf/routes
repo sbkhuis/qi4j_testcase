@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /create/:name	@nl.scorius.presentation.controllers.SubscriptionController.create(name: String)
+GET     /get/:id		@nl.scorius.presentation.controllers.SubscriptionController.get(id: String)
+GET		/find/:name		@nl.scorius.presentation.controllers.SubscriptionController.findByName(name: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
