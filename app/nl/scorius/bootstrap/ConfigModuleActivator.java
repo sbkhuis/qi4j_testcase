@@ -13,9 +13,9 @@ public class ConfigModuleActivator implements Activator<Module>
 		aConfig.enabled().set(true);
 		aConfig.identity().set(InfraLayerAssembler.DS_ID);
 		aConfig.driver().set("org.postgresql.Driver");
-		aConfig.url().set("jdbc:postgresql://10.0.0.86/scorius6");
-		aConfig.username().set("postgres");
-		aConfig.password().set("postgres");
+		//aConfig.url().set("jdbc:postgresql://10.0.0.86/scorius6");
+		//aConfig.username().set("postgres");
+		//aConfig.password().set("postgres");
 	}
 
 	private void setDataSourceIndexConfiguration(
@@ -24,9 +24,9 @@ public class ConfigModuleActivator implements Activator<Module>
 		aConfig.enabled().set(true);
 		aConfig.identity().set(InfraLayerAssembler.DS_INDEX_ID);
 		aConfig.driver().set("org.postgresql.Driver");
-		aConfig.url().set("jdbc:postgresql://10.0.0.86/scorius6");
-		aConfig.username().set("postgres");
-		aConfig.password().set("postgres");
+		//aConfig.url().set("jdbc:postgresql://10.0.0.86/scorius6");
+		//aConfig.username().set("postgres");
+		//aConfig.password().set("postgres");
 	}
 
 	private DataSourceConfiguration createDataSourceConfiguration(
